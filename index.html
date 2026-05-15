@@ -2,24 +2,34 @@
 <html>
 <head>
   <title>Essenza Store</title>
+
   <style>
     body {
       font-family: Arial;
       text-align: center;
       background: #f5f5f5;
     }
+
+    h1 {
+      color: #2c3e50;
+    }
+
     .produto {
       border: 1px solid #ccc;
       padding: 15px;
       margin: 20px;
       background: white;
       display: inline-block;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
+
     button {
       background: black;
       color: white;
       padding: 10px;
       border: none;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -32,13 +42,17 @@
 <div class="produto">
   <h2>Perfume Essenza</h2>
   <p>Preço: 15.000 Kz</p>
-  <button>Comprar</button>
+  <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Perfume Essenza'">
+    Comprar
+  </button>
 </div>
 
 <div class="produto">
   <h2>Óleo Essencial</h2>
   <p>Preço: 10.000 Kz</p>
-  <button>Comprar</button>
+  <button onclick="window.location.href='https://wa.me/244SEUNUMERO?text=Quero comprar Óleo Essencial'">
+    Comprar
+  </button>
 </div>
 
 </body>
