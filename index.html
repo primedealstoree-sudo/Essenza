@@ -20,14 +20,14 @@
     header h1 {
       margin: 0;
       font-size: 28px;
-      letter-spacing: 2px;
+      letter-spacing: 3px;
     }
 
     .container {
-      padding: 20px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      padding: 20px;
     }
 
     .produto {
@@ -36,24 +36,33 @@
       margin: 15px;
       width: 250px;
       text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
 
     .produto img {
       width: 100%;
+      height: 200px;
+      object-fit: cover; /* resolve imagens desiguais */
+      border-radius: 5px;
       margin-bottom: 5px;
     }
 
     button {
-      background: black;
+      background: linear-gradient(45deg, #000, #333);
       color: white;
-      padding: 10px;
+      padding: 12px;
       border: none;
       margin-top: 10px;
       cursor: pointer;
+      border-radius: 5px;
+      width: 100%;
+      font-weight: bold;
+      transition: 0.3s;
     }
 
     button:hover {
-      background: #333;
+      background: black;
     }
   </style>
 </head>
@@ -62,77 +71,46 @@
 
 <header>
   <h1>ESSENZA</h1>
+  <p>Elegância em cada aroma</p>
 </header>
 
 <div class="container">
 
-  <!-- YARA -->
   <div class="produto">
     <img src="https://m.media-amazon.com/images/I/71vQj7Qx3wL._SL1500_.jpg">
     <img src="https://m.media-amazon.com/images/I/61vQj7Qx3wL._SL1500_.jpg">
     <h2>Lattafa Yara</h2>
     <p>20.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Lattafa Yara'">Comprar</button>
-  </div>
-
-  <div class="produto">
-    <img src="https://m.media-amazon.com/images/I/71oQj7Qx3wL._SL1500_.jpg">
-    <img src="https://m.media-amazon.com/images/I/61oQj7Qx3wL._SL1500_.jpg">
-    <h2>Lattafa Yara Moi</h2>
-    <p>20.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Lattafa Yara Moi'">Comprar</button>
-  </div>
-
-  <!-- ASAD -->
-  <div class="produto">
-    <img src="https://m.media-amazon.com/images/I/61Z4b6u3gFL._SL1000_.jpg">
-    <img src="https://m.media-amazon.com/images/I/71Z4b6u3gFL._SL1000_.jpg">
-    <h2>Lattafa Asad</h2>
-    <p>20.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Lattafa Asad'">Comprar</button>
-  </div>
-
-  <!-- OUTROS -->
-  <div class="produto">
-    <img src="https://cdn.notinoimg.com/detail_main_mq/paco-rabanne/3349668617067_01-o/1-million-royal___240702.jpg">
-    <h2>Paco Rabanne 1 Million Royal</h2>
-    <p>30.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar 1 Million Royal'">Comprar</button>
+    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Lattafa Yara'">
+      Comprar no WhatsApp
+    </button>
   </div>
 
   <div class="produto">
     <img src="https://m.media-amazon.com/images/I/51h-KPGkCWL._AC_SL1500_.jpg">
     <h2>Xerjoff Erba Pura</h2>
     <p>35.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Xerjoff Erba Pura'">Comprar</button>
+    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Xerjoff Erba Pura'">
+      Comprar no WhatsApp
+    </button>
   </div>
 
   <div class="produto">
     <img src="https://m.media-amazon.com/images/I/61-iz-R4SHL._SL1000_.jpg">
     <h2>Tom Ford Neroli Portofino</h2>
     <p>30.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Neroli Portofino'">Comprar</button>
+    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Neroli Portofino'">
+      Comprar no WhatsApp
+    </button>
   </div>
 
   <div class="produto">
-    <img src="https://m.media-amazon.com/images/I/71lI2W8Z9WL._SL1500_.jpg">
-    <h2>Valentino Born In Roma Intense</h2>
-    <p>25.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Valentino Born In Roma Intense'">Comprar</button>
-  </div>
-
-  <div class="produto">
-    <img src="https://m.media-amazon.com/images/I/61r6k4oZKqL._SL1000_.jpg">
-    <h2>Bleu de Chanel EDP</h2>
-    <p>25.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Bleu de Chanel'">Comprar</button>
-  </div>
-
-  <div class="produto">
-    <img src="https://m.media-amazon.com/images/I/61p8Q5kXJ0L._SL1000_.jpg">
-    <h2>Dior J’adore</h2>
-    <p>25.000 Kz</p>
-    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar Dior Jadore'">Comprar</button>
+    <img src="https://cdn.notinoimg.com/detail_main_mq/paco-rabanne/3349668617067_01-o/1-million-royal___240702.jpg">
+    <h2>Paco Rabanne 1 Million Royal</h2>
+    <p>30.000 Kz</p>
+    <button onclick="window.location.href='https://wa.me/244975989479?text=Quero comprar 1 Million Royal'">
+      Comprar no WhatsApp
+    </button>
   </div>
 
 </div>
